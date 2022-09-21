@@ -7,32 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #nav_parent{
-            border:1px solid green;
+        #nav_parent {
+            border: 1px solid green;
             border-radius: 20px;
-           display:grid;
-           grid-template-rows:100px;
-           grid-template-columns: 70% 8% 8% 8% 8%;
+            display: grid;
+            grid-template-rows: 100px;
+            grid-template-columns: 70% 30%;
             background-color: rgb(24, 24, 42);
         }
-        #nav_parent>div{
-            margin-top: 2%;
-            justify-content: center;
-            align-items: center;
-            color:white;
+
+        #nav_parent>div:nth-child(1){
+            color: white;
+            margin-top: 40px;
+            margin-left: 20px;
+            
         }
-        
-        
+        #nav_parent>div:nth-child(2){
+            color: white;
+            display:grid;
+            grid-template-columns:repeat(4,20%);
+            gap:2%;
+            align-items: center;
+            justify-content: center;
+        };
     </style>
 </head>
 
 <body>
     <div id="nav_parent">
-        <div>Rebook</div>
-        <div>Men</div>
-        <div>Women</div>
-        <div>Login</div>
-        <div>Signup</div>
+        <div>
+            <div>Reebok</div>
+        </div>
+        <div>
+            <div>Men</div>
+            <div>Women</div>
+            <div>Login</div>
+            <div>Signup</div>
+        </div>
+
     </div>
 
 </body>
